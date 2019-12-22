@@ -7,12 +7,14 @@ package thamuswan.sample.springapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * The application's main class.
  *
  * @author Thanawat Muangsawang
  */
+@EnableScheduling
 @SpringBootApplication
 public class Application {
 
