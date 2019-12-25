@@ -5,6 +5,8 @@
  */
 package thamuswan.sample.springapp.scheduler;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -16,9 +18,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class MainTaskScheduler {
 
+    // Spring uses Logback by default.
+    Logger logger = LoggerFactory.getLogger(MainTaskScheduler.class);
+
     @Scheduled(initialDelay = 1000, fixedDelay = 15000)
     public void lauchTaskA() {
-        System.out.println("Launch a Task 'A'");
+        logger.info("Executing Task 'A'");
     }
 
 }
