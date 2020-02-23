@@ -1,2 +1,4 @@
 # -- Logging properties --
 # logging.file.name: spring-app-sample.log
+
+app.scheduler.enabled: false
