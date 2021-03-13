@@ -2,3 +2,5 @@
 # logging.file.name: spring-app-sample.log
 
 app.scheduler.enabled: false
+
+server.port: 9000
