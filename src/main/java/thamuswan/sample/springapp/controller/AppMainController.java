@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("main")
-public class MainController {
+public class AppMainController {
 
     @GetMapping("sample-resource")
     public String getSampleResource() {
